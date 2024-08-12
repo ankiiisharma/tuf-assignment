@@ -1,6 +1,6 @@
-import React from "react";
-import FlashcardList from "./comonents/FlashcardList";
-import Navbar from "./comonents/Navbar";
+// import React from "react";
+// import FlashcardList from "./comonents/FlashcardList";
+// import Navbar from "./comonents/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import AddCards from "./pages/AddCards";

@@ -1,4 +1,4 @@
-import React, { FormEvent, useState } from "react";
+import { FormEvent, useState } from "react";
 import api from "../api/axios";
 import { IoAddCircle } from "react-icons/io5";
 import { IoMdArrowBack } from "react-icons/io";

@@ -4,8 +4,8 @@ import api from "../api/axios";
 import loading from "../assets/loading.svg";
 import { GrLinkPrevious, GrLinkNext } from "react-icons/gr";
 import { RiErrorWarningFill } from "react-icons/ri";
-import { Link } from "react-router-dom";
-import toast from "react-hot-toast";
+// import { Link } from "react-router-dom";
+// import toast from "react-hot-toast";
 
 const FlashcardList: React.FC = () => {
   const [flashcards, setFlashcards] = useState<
