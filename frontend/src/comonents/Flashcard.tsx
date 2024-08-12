@@ -4,21 +4,26 @@ import { motion } from "framer-motion";
 interface FlashcardProps {
   question: string;
   answer: string;
+  flipped: boolean;
+  onFlip: () => void;
 }
 
-const Flashcard: React.FC<FlashcardProps> = ({ question, answer }) => {
-  const [flipped, setFlipped] = useState(false);
-
+const Flashcard: React.FC<FlashcardProps> = ({
+  question,
+  answer,
+  flipped,
+  onFlip,
+}) => {
   return (
     <div
       className="relative w-[350px] h-[400px] perspective-1000"
-      onClick={() => setFlipped(!flipped)}
+      onClick={onFlip}
     >
       <motion.div
-        className="absolute inset-0 w-full h-full bg-gray-800 text-white text-2xl font-semibold bg-blue-gradient border border-white flex items-center justify-center rounded-lg shadow-lg"
+        className="absolute inset-0 w-full h-full bg-gray-800 text-white text-[20px] font-normal bg-blue-gradient border border-white flex items-center justify-center rounded-lg shadow-lg"
         initial={{ rotateY: 0 }}
         animate={{ rotateY: flipped ? 180 : 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.4 }}
         style={{ transformStyle: "preserve-3d" }}
       >
         <div

@@ -1,17 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
-      <div className="flex w-1/2 px-[20px] justify-between bg-main-gradient rounded-lg p-3">
-        <img
-          src="https://pbs.twimg.com/profile_images/1810984608428658688/ZA_heiFH_400x400.jpg"
-          width={50}
-          className="flex items-center rounded-full"
-        />
+      <div className="flex w-[350px] justify-between items-center rounded-lg p-3 mb-7">
+        <h1 className="font-bold text-2xl text-red-500 tracking-tighter">
+          {" "}
+          assignmet{" "}
+        </h1>
 
         <div className="flex flex-row items-center">
-          <h1> add card </h1>
+          <Link to="/addcards">
+            <button className="bg-pink py-2 px-3 rounded-lg border norder-slate-500 hover:translate-y-[-3px] ease-in-out duration-200">
+              {" "}
+              add card{" "}
+            </button>
+          </Link>
         </div>
       </div>
     </>
