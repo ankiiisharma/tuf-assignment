@@ -60,8 +60,9 @@ const FlashcardList: React.FC = () => {
     return (
       <div className="flex items-center justify-center min-h-screen bg-blackish-blue-gradient">
         <p className="text-slate-300 flex items-center text-xl tracking-tighter font-bold">
-          <RiErrorWarningFill className="mr-2 size-6 text-red-600" /> Something
-          went Wrong!
+          <RiErrorWarningFill className="mr-2 size-6 text-red-600" /> Database
+          is Down!, if yoru are seeing this message, which means the database is
+          down as i am using online PostgresSQL DB please try again later.
         </p>
       </div>
     );
